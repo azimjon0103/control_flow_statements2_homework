@@ -8,4 +8,16 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    return
+    
+    mx=a
+    if mx<b:
+        mx=b
+    if mx<c:
+        mx=c
+    min=c
+    if min>b:
+        min=b
+    if min>a:
+        min=a           
+    return  a+b+c-min-mx
+print(main(1,4,2))    
