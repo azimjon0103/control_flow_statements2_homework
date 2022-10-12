@@ -11,7 +11,7 @@ def main(a,b):
         c=0
     if a>b :
         c=a
-    else:
-        c=b
+    if b>a:
+        c=b   
     return    c
-print(main(2,8))     
+print(main(2,2))     
