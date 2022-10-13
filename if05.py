@@ -15,41 +15,38 @@ def main(n):
     x4=n%10
     n//=10
     x5=n%10
-    if x1<x2:
-        c= x2
-    else :
-        c= x1
-    if x1<x3:
-        c= x3
-    else :
-        c= x1
-    if x1<x4:
-        c= x4
-    else :
-        c= x1    
-    if x1<x5:
-        c= x5
-    else :
-        c= x1
-    if x2<x3:
-        c= x3 
-    else :
-        c= x2
-    if x2<x4:
-        c= x4
-    else :
-        c= x2
-    if x2<x5:
-        c= x5
-    else :
-        c= x2
-    if x3<x4:
-        c= x4
-    else :
-        c= x3
+    if x1>x2:
+        if x1>x3:
+            if x1>x4:
+                if x1>x5:
+                    return x1
+                else :
+                    return x5
+            else :
+                return x4
+        else :
+            return x3
+    elif x1<x2:
+        return x2
+    if x2>x3:
+        if x2>x4:
+            if x2>x5:
+                return x2
+            else :
+                return x5
+        else :
+            return x4
+    elif x2<x3 :
+        return x3
+    if x3>x4:
+        if x3>x5:
+            return x3
+        else :
+            return x5
+    elif x3<x4 :
+        return x4
     if x4<x5:
-        c= x5 
-    else :
-        c= x4
-    return c                                                                 
-print(main(98527))
+        return x5
+    elif x4>x5 :
+        return x4                
+print(main(25976))
