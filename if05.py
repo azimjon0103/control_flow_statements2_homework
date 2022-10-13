@@ -22,31 +22,19 @@ def main(n):
                     return x1
                 else :
                     return x5
-            else :
-                return x4
-        else :
-            return x3
-    elif x1<x2:
-        return x2
     if x2>x3:
-        if x2>x4:
+        if  x2>x4:
             if x2>x5:
                 return x2
             else :
                 return x5
-        else :
-            return x4
-    elif x2<x3 :
-        return x3
-    if x3>x4:
+    if x3>x4 :
         if x3>x5:
             return x3
-        else :
+        else:
             return x5
-    elif x3<x4 :
+    if x4>x5:
         return x4
-    if x4<x5:
-        return x5
-    elif x4>x5 :
-        return x4                
+    else :
+        return x5    
 print(main(25976))
