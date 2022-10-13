@@ -6,4 +6,45 @@ def main(n):
     Returns:
         int: return answer.
     """
-    return
+    
+    x1=n%10
+    n//=10
+    x2=n%10
+    n//=10
+    x3=n%10
+    n//=10
+    x4=n%10
+    n//=10
+    x5=n%10
+    x1=n%10
+    n//=10
+    x2=n%10
+    n//=10
+    x3=n%10
+    n//=10
+    x4=n%10
+    n//=10
+    x5=n%10
+    if x1>x2:
+        if x1>x3:
+            if x1>x4:
+                if x1>x5:
+                    return 5
+                else :
+                    return 1
+    if x2>x3:
+        if  x2>x4:
+            if x2>x5:
+                return 4
+            else :
+                return 1
+    if x3>x4 :
+        if x3>x5:
+            return 3
+        else:
+            return 1
+    if x4>x5:
+        return 2
+    else :
+        return 1                            
+print(main(76514))    
